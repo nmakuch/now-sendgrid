@@ -1,0 +1,7 @@
+{
+    "build": {
+      "env": {
+        "NOW_API_KEY": "@now_api_key"
+      }
+    }
+  }
