@@ -6,20 +6,58 @@
 
 @import "tailwindcss/utilities";
 
-h1 {
-  @apply text-red-400;
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
 }
 
-p {
-  @apply text-gray-500;
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("/fonts/Inter-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-Black";
+  src: url("/fonts/Inter-Black.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url("/fonts/Inter-ExtraBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/fonts/Raleway-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Raleway-Regular";
+}
+
+h1,h2,h3 {
+  font-family: "Inter-Bold"
 }
 
 main {
-  width: 500px;
+  @apply w-full px-40;
 }
 
 .navbar {
-  @apply flex justify-between py-8 px-20;
+  @apply flex justify-between py-8 px-40;
 }
 
 input,
@@ -62,4 +100,34 @@ svg:hover .logo-black1,
 svg:hover .logo-black2 {
   fill: #da4343;
   transition: fill 0.7s ease;
+}
+
+.portfolio-container {
+  @apply flex;
+}
+
+.portfolio-container h2 {
+  @apply text-lg;
+}
+
+.portfolio-container p {
+  @apply text-sm;
+}
+
+.portfolio-item-left img, .portfolio-item-right img {
+  @apply w-3/4 mx-auto mt-10 mb-5;
+}
+
+.portfolio-item-left {
+  @apply w-full bg-gray-400 mr-1 mb-2 text-center;
+  background-color: #fcd6d6;
+}
+
+.portfolio-item-right {
+  @apply w-full bg-gray-400 ml-1 mb-2 text-center;
+  background-color: #fcd6d6;
+}
+
+.inner {
+  @apply p-12;
 }
