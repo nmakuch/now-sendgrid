@@ -1,7 +1,65 @@
 /* purgecss start ignore */
-@import 'tailwindcss/base';
+@import "tailwindcss/base";
 /* purgecss end ignore */
 
-@import 'tailwindcss/components';
+@import "tailwindcss/components";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
+
+h1 {
+  @apply text-red-400;
+}
+
+p {
+  @apply text-gray-500;
+}
+
+main {
+  width: 500px;
+}
+
+.navbar {
+  @apply flex justify-between py-8 px-20;
+}
+
+input,
+textarea {
+  @apply border-2 w-full mb-4;
+}
+
+button {
+  @apply bg-gray-800 text-white px-4 py-2;
+}
+
+label {
+  @apply block;
+}
+
+.links ul li {
+  @apply float-left pl-10 pt-4;
+}
+
+svg {
+  width: 50px;
+}
+
+svg .logo-red,
+svg .logo-black1,
+svg .logo-black2 {
+  transition: fill 0.7s ease;
+}
+
+svg:hover {
+  cursor: pointer;
+}
+
+svg:hover .logo-red {
+  fill: #ab3030;
+  transition: fill 0.7s ease;
+}
+
+svg:hover .logo-black1,
+svg:hover .logo-black2 {
+  fill: #da4343;
+  transition: fill 0.7s ease;
+}
