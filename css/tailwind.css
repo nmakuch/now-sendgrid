@@ -61,12 +61,7 @@ main {
 }
 
 .footer {
-  @apply text-2xl mt-24 text-center;
-}
-
-.footer h2 {
-  @apply mt-32;
-  color: #5d5d5d;
+  @apply text-2xl text-center;
 }
 
 .footer svg {
@@ -96,7 +91,7 @@ textarea {
 }
 
 button {
-  @apply bg-gray-800 text-white px-4 py-2;
+  @apply bg-gray-800 w-full text-white px-4 py-2;
 }
 
 label {
@@ -136,6 +131,10 @@ svg:hover .logo-black2 {
   @apply flex;
 }
 
+.portfolio-grid {
+  @apply mb-24;
+}
+
 .portfolio-container h2 {
   @apply text-lg;
 }
@@ -168,4 +167,13 @@ svg:hover .logo-black2 {
 
 .social-icon {
   font-size: 40px;
+}
+
+.contact {
+  height: 80vh;
+  @apply flex w-full justify-center items-center;
+}
+
+.contact form {
+  width: 500px;
 }

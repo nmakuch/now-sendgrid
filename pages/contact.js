@@ -61,47 +61,44 @@ export default () => {
   return (
     <Layout>
       <main>
-        <form onSubmit={handleOnSubmit}>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              onChange={handleOnChange}
-              required
-              value={inputs.email}
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              onChange={handleOnChange}
-              required
-              value={inputs.message}
-            />
-          </div>
-          <div>
-            <button type="submit" disabled={status.submitting}>
-              {!status.submitting
-                ? !status.submitted
-                  ? "Submit"
-                  : "Submitted"
-                : "Submitting..."}
-            </button>
-          </div>
-        </form>
+        <div className="contact">
+          <form onSubmit={handleOnSubmit}>
+            <div>
+              <label htmlFor="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                onChange={handleOnChange}
+                required
+                value={inputs.email}
+              />
+            </div>
+            <div>
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                onChange={handleOnChange}
+                required
+                value={inputs.message}
+              />
+            </div>
+            <div>
+              <button type="submit" disabled={status.submitting}>
+                {!status.submitting
+                  ? !status.submitted
+                    ? "Submit"
+                    : "Submitted"
+                  : "Submitting..."}
+              </button>
+            </div>
+          </form>
+        </div>
         {status.info.error && (
           <div className="error">Error: {status.info.msg}</div>
         )}
         {!status.info.error && status.info.msg && (
           <div className="success">{status.info.msg}</div>
         )}
-
-        <div className="container">
-          <h1>Next.js</h1>
-          <p>with Tailwind CSS</p>
-        </div>
       </main>
     </Layout>
   );
