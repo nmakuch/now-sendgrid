@@ -1,15 +1,15 @@
-export default () => {
-  return (
-    <div className="portfolio-container">
+export default ({ title, image, category }) => {
+    return (
       <div className="portfolio-item-right">
         <a href="#">
           <div className="inner">
-            <h2>Claim Tax Benefits</h2>
-            <p>Interaction design</p>
-            <img src="/img/claim-tax-benefits.png" />
+            <div>
+              <p>{category}</p>
+              <h2>{title}</h2>
+            </div>
+            <img src={image} />
           </div>
         </a>
       </div>
-    </div>
-  );
-};
+    );
+  };

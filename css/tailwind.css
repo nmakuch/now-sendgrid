@@ -53,11 +53,41 @@ h1,h2,h3 {
 }
 
 main {
-  @apply w-full px-40;
+  @apply w-full px-24;
 }
 
 .navbar {
-  @apply flex justify-between py-8 px-40;
+  @apply flex justify-between pt-8 px-24;
+}
+
+.footer {
+  @apply text-2xl mt-24 text-center;
+}
+
+.footer h2 {
+  @apply mt-32;
+  color: #5d5d5d;
+}
+
+.footer svg {
+  @apply w-10 mr-6 mt-4;
+}
+
+.footer svg:last-of-type {
+  @apply mr-0;
+}
+
+.footer a {
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: 3px solid #5d5d5d;
+  font-family: "Inter-SemiBold";
+  color: #5d5d5d;
+  font-size: 20px;
+}
+
+.footer .icons {
+  @apply flex justify-center mb-16;
 }
 
 input,
@@ -119,15 +149,23 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-item-left {
-  @apply w-full bg-gray-400 mr-1 mb-2 text-center;
+  @apply w-full mr-1 mb-2 text-center;
   background-color: #fcd6d6;
 }
 
 .portfolio-item-right {
-  @apply w-full bg-gray-400 ml-1 mb-2 text-center;
+  @apply w-full ml-1 mb-2 text-center;
   background-color: #fcd6d6;
 }
 
 .inner {
   @apply p-12;
+}
+
+.banner h1 {
+  @apply text-4xl text-center py-32;
+}
+
+.social-icon {
+  font-size: 40px;
 }
