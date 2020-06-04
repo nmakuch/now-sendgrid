@@ -12,8 +12,7 @@ export default () => {
             </span>
           </div>
           <h1>
-            Hi, I’m Nick Makuch. I’m an Interaction Designer based in Ottawa,
-            Ontario. I also practice front-end development.
+            Hi, I’m Nick. I’m an Interaction Designer who also likes to code. I am currently living in Ottawa, Ontario.
           </h1>
           <p>
             You can view some of the recent and past projects I've worked on
@@ -21,7 +20,7 @@ export default () => {
             please visit my contact page to send me a message.
           </p>
         </div>
-        <div class="portfolio-container grid grid-cols-3 gap-4 mb-32">
+        <div className="portfolio-container grid grid-cols-3 gap-4 mb-32">
           <PortfolioItem
             date="2019"
             category="Canadian Digital Service"
