@@ -6,6 +6,10 @@
 
 @import "tailwindcss/utilities";
 
+h1 {
+  @apply text-4xl mb-3 text-center;
+}
+
 main {
   @apply w-full px-24;
 }
@@ -19,36 +23,37 @@ main {
 }
 
 .footer svg {
-  @apply w-10 mr-6 mt-4;
+  @apply w-10 mr-6 mt-10 mb-16;
 }
 
 .footer svg:last-of-type {
   @apply mr-0;
 }
 
-.footer a {
-  border-radius: 20px;
-  padding: 10px 50px;
-  border: 3px solid #5d5d5d;
-  color: #5d5d5d;
-  font-size: 20px;
-}
-
 .footer .icons {
-  @apply flex justify-center mb-16;
+  @apply flex justify-center;
 }
 
 input,
 textarea {
-  @apply border-2 w-full mb-4;
+  @apply border-2 w-full mb-6;
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 150px;
 }
 
 button {
-  @apply bg-gray-800 w-full text-white px-4 py-2;
+  @apply w-full text-white py-4;
+  background-color: #5d5d5d;
 }
 
 label {
-  @apply block;
+  @apply block text-lg font-bold mb-3;
 }
 
 .links ul li {
@@ -81,52 +86,75 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-container {
-  @apply flex;
+  @apply mt-8;
 }
 
-.portfolio-grid {
-  @apply mb-24;
+.portfolio-item img {
+  @apply w-full mx-auto p-12;
+  background-color: #ffebec;
 }
 
-.portfolio-container h2 {
-  @apply text-lg;
+.portfolio-item {
+  @apply w-full mr-1 mb-2;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
 }
 
-.portfolio-container p {
-  @apply text-sm;
+.portfolio-item .category span {
+  font-family: "Inter-SemiBold";
 }
 
-.portfolio-item-left img, .portfolio-item-right img {
-  @apply w-3/4 mx-auto mt-10 mb-5;
+.banner {
+  @apply my-40 w-4/5;
 }
 
-.portfolio-item-left {
-  @apply w-full mr-1 mb-2 text-center;
-  background-color: #fcd6d6;
-}
-
-.portfolio-item-right {
-  @apply w-full ml-1 mb-2 text-center;
-  background-color: #fcd6d6;
-}
-
-.inner {
-  @apply p-12;
+.banner .employment-status {
+  text-align: center;
+  font-family: "Inter-SemiBold";
+  color: #a5a5a5;
 }
 
 .banner h1 {
-  @apply text-4xl text-center py-32;
+  @apply text-3xl text-left mb-4 mt-4;
+}
+
+.banner-links a {
+  background-color: #cb485a;
+  color: white;
+  border-radius: 5px;
+  font-family: "Inter-SemiBold";
+  @apply px-8 py-4 mr-4;
 }
 
 .social-icon {
   font-size: 40px;
 }
 
-.contact {
-  height: 75vh;
-  @apply flex w-full justify-center items-center;
+.contact-form {
+  @apply flex w-1/2 justify-center items-center pt-8 pb-24;
 }
 
-.contact form {
-  width: 500px;
+.contact-form form,
+.contact-form .connect {
+  width: 100%;
+  background-color: #ffebec;
+  padding: 10%;
+  margin-right: 10px;
+}
+
+.connect h2 {
+  @apply text-2xl;
+}
+
+.contact-header p {
+  @apply mb-3;
+  text-align: center;
+}
+
+.contact-header p:last-of-type {
+  @apply mb-2;
+}
+
+.contact-header {
+  @apply mx-auto pt-24;
+  width: 600px;
 }

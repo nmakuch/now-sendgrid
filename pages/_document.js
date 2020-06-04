@@ -18,10 +18,14 @@ class CustomDocument extends Document {
             dangerouslySetInnerHTML={{
               __html: `
           body {
-            font-family: "Raleway";
+            font-family: "Inter-Regular";
           }
 
-          h1,h2,h3 {
+          h1,h2,h3,label {
+            font-family: "Inter-SemiBold";
+          }
+
+          .bottom  {
             font-family: "Inter-SemiBold";
           }
           `,
