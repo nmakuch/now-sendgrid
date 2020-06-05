@@ -23,7 +23,7 @@ main {
 }
 
 .footer svg {
-  @apply w-10 mr-6 mt-10 mb-16;
+  @apply w-8 mr-10 mt-10 mb-16;
 }
 
 .footer svg:last-of-type {
@@ -58,6 +58,7 @@ label {
 
 .links ul li {
   @apply float-left pl-10 pt-4;
+  font-family: "Inter-Regular";
 }
 
 svg {
@@ -90,13 +91,12 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-item img {
-  @apply w-full mx-auto p-12;
-  background-color: #ffebec;
+  @apply w-full mx-auto;
 }
 
 .portfolio-item {
-  @apply w-full mr-1 mb-2;
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+  @apply w-full mb-2;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item .category span {
@@ -104,11 +104,10 @@ svg:hover .logo-black2 {
 }
 
 .banner {
-  @apply my-40 w-4/5;
+  @apply my-32 w-3/4 mx-auto;
 }
 
 .banner .employment-status {
-  text-align: center;
   font-family: "Inter-SemiBold";
   color: #a5a5a5;
 }
@@ -117,44 +116,7 @@ svg:hover .logo-black2 {
   @apply text-3xl text-left mb-4 mt-4;
 }
 
-.banner-links a {
-  background-color: #cb485a;
-  color: white;
-  border-radius: 5px;
-  font-family: "Inter-SemiBold";
-  @apply px-8 py-4 mr-4;
-}
-
 .social-icon {
   font-size: 40px;
 }
 
-.contact-form {
-  @apply flex w-1/2 justify-center items-center pt-8 pb-24;
-}
-
-.contact-form form,
-.contact-form .connect {
-  width: 100%;
-  background-color: #ffebec;
-  padding: 10%;
-  margin-right: 10px;
-}
-
-.connect h2 {
-  @apply text-2xl;
-}
-
-.contact-header p {
-  @apply mb-3;
-  text-align: center;
-}
-
-.contact-header p:last-of-type {
-  @apply mb-2;
-}
-
-.contact-header {
-  @apply mx-auto pt-24;
-  width: 600px;
-}
