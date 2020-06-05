@@ -87,7 +87,7 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-container {
-  @apply mt-8;
+  @apply mt-8 grid grid-cols-3 gap-5 mb-32;
 }
 
 .portfolio-item img {
@@ -99,8 +99,37 @@ svg:hover .logo-black2 {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+.portfolio-item .category {
+  @apply text-darkGray flex justify-between px-6 pt-8 mb-8;
+}
+
+.portfolio-item .category .left,
+.portfolio-item .category .right {
+  @apply text-xs;
+}
+
 .portfolio-item .category span {
   font-family: "Inter-SemiBold";
+}
+
+.portfolio-item img {
+  @apply py-2;
+}
+
+.portfolio-item .portfolio-header {
+  @apply px-6 text-2xl mb-4;
+}
+
+.portfolio-item .portfolio-description {
+  @apply px-6 text-sm mb-8
+}
+
+.portfolio-item .bottom-container {
+  @apply px-6 pb-8;
+}
+
+.portfolio-item .bottom-container .bottom {
+  @apply text-xs text-darkGray
 }
 
 .banner {
@@ -120,3 +149,26 @@ svg:hover .logo-black2 {
   font-size: 40px;
 }
 
+.lightRed {
+  @apply bg-lightRed;
+}
+
+.teal {
+  @apply bg-teal;
+}
+
+.blue {
+  @apply bg-blue;
+}
+
+.lightPurple {
+  @apply bg-lightPurple;
+}
+
+.pink {
+  @apply bg-pink;
+}
+
+.lightYellow {
+  @apply bg-lightYellow;
+}

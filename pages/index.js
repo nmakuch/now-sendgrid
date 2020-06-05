@@ -10,7 +10,7 @@ export default () => {
           bannerSubheader="I'm currently available for freelance projects"
           bannerHeader="Hi, I’m Nick Makuch. I’m an Interaction Designer and Front End Developper based in Ottawa, Ontario."
         />
-        <div className="portfolio-container grid grid-cols-3 gap-5 mb-32">
+        <div className="portfolio-container">
           <PortfolioItem
             date="2019"
             category="Canadian Digital Service"
@@ -18,7 +18,7 @@ export default () => {
             benefits and refunds they’re entitled to by making it easier to
             file their taxes."
             image="/img/claim-tax-benefits2.png"
-            background="bg-teal"
+            background="teal"
             title="Claim Tax Benefits"
             bottom="Interaction design"
           />
@@ -29,7 +29,7 @@ export default () => {
             image="/img/ircc-rescheduler2.png"
             title="IRCC Rescheduler"
             bottom="Interaction design"
-            background="bg-blue"
+            background="blue"
           />
           <PortfolioItem
             date="2019"
@@ -38,7 +38,7 @@ export default () => {
             image="/img/rosies-ms2.png"
             title="Rosie & Company (Maid)"
             bottom="Web development"
-            background="bg-lightPurple"
+            background="lightPurple"
           />
           <PortfolioItem
             date="2019"
@@ -47,7 +47,7 @@ export default () => {
             image="/img/rosie-and-company2.png"
             title="Rosie & Company (Dog)"
             bottom="Web development"
-            background="bg-lightYellow"
+            background="lightYellow"
           />
 
           <PortfolioItem
@@ -57,7 +57,7 @@ export default () => {
             image="/img/leading-sport-nation2.png"
             title="A Leading Sport Nation"
             bottom="Video production"
-            background="bg-pink"
+            background="pink"
           />
 
           <PortfolioItem
@@ -66,7 +66,7 @@ export default () => {
             description="This is a logo I designed for an Ottawa based drywall and mudding company."
             image="/img/manions-mud.png"
             title="Manion's Mud n' Drywall"
-            background="bg-lightRed"
+            background="lightRed"
             bottom="Graphic design"
           />
         </div>
