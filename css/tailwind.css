@@ -136,6 +136,15 @@ svg:hover .logo-black2 {
   @apply mr-0;
 }
 
+.footer svg path {
+  transition: fill 0.7s ease;
+}
+
+.footer svg:hover path{
+  fill: #da4343;
+  transition: fill 0.7s ease;
+}
+
 .footer .icons {
   @apply flex justify-center;
 }
@@ -200,11 +209,13 @@ header label {
   display: block;
   text-decoration: none;
   line-height: 20px;
+  transition: color 0.7s ease;
 }
 
 header a:hover,
 header label:hover {
-  color: #aaa;
+  color: #da4343;
+  transition: color 0.7s ease;
 }
 
 header label {

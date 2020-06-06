@@ -8,7 +8,7 @@ export default () => {
       </a>
 
       <input id="nav" type="checkbox" />
-      <label for="nav"></label>
+      <label htmlFor="nav"></label>
 
       <nav>
         <ul>
