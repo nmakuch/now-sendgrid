@@ -70,8 +70,8 @@ export default () => {
           bannerSubheader="Do you have any questions?"
           bannerHeader={`If you'd like to connect, you can send an email to makuch.nick@gmail.com or use the form below.`}
         />
-        <div className="contact-container bg-contactForm p-24 w-3/4 mb-24 mx-auto">
-          <form className="w-3/4 mx-auto" onSubmit={handleOnSubmit}>
+        <div className="contact-container">
+          <form onSubmit={handleOnSubmit}>
             <div>
             <input
                 id="firstName"

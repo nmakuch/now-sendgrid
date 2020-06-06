@@ -201,7 +201,12 @@ svg:hover .logo-black2 {
 /* START OF CONTACT */
 
 .contact-container {
+  @apply bg-contactForm p-24 w-3/4 mb-24 mx-auto;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container form {
+  @apply w-3/4 mx-auto;
 }
 
 /* END OF CONTACT */
