@@ -1,24 +1,28 @@
-import Logo from "./Logo"
+import Logo from "./Logo";
 
 export default () => {
   return (
-    <div className="navbar">
-      <Logo />
-      <div className="links">
+    <header>
+      <a className="logo" href="http://minimaldev.com">
+        <Logo />
+      </a>
+
+      <input id="nav" type="checkbox" />
+      <label for="nav"></label>
+
+      <nav>
         <ul>
           <li>
             <a href="/">Portfolio</a>
           </li>
-
           <li>
             <a href="/about">About</a>
           </li>
-
           <li>
             <a href="/contact">Contact</a>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };

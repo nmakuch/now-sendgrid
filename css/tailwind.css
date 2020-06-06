@@ -14,25 +14,9 @@ main {
   @apply w-full px-24;
 }
 
-.navbar {
-  @apply flex justify-between pt-8 px-24;
-}
+/* ------------------------------------------------------ */
 
-.footer {
-  @apply text-2xl text-center;
-}
-
-.footer svg {
-  @apply w-8 mr-10 mt-10 mb-16;
-}
-
-.footer svg:last-of-type {
-  @apply mr-0;
-}
-
-.footer .icons {
-  @apply flex justify-center;
-}
+/* START OF FORMS */
 
 input,
 textarea {
@@ -55,11 +39,11 @@ button {
 label {
   @apply block text-lg font-bold mb-3;
 }
+/* END OF FORMS */
 
-.links ul li {
-  @apply float-left pl-10 pt-4;
-  font-family: "Inter-Regular";
-}
+/* ------------------------------------------------------ */
+
+/* START OF SVG */
 
 svg {
   width: 50px;
@@ -85,7 +69,11 @@ svg:hover .logo-black2 {
   fill: #da4343;
   transition: fill 0.7s ease;
 }
+/* END OF SVG */
 
+/* ------------------------------------------------------ */
+
+/* START OF PORTFOLIO ITEM */
 .portfolio-container {
   @apply mt-8 grid grid-cols-3 gap-5 mb-32;
 }
@@ -121,7 +109,7 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-item .portfolio-description {
-  @apply px-6 text-sm mb-8
+  @apply px-6 text-sm mb-8;
 }
 
 .portfolio-item .bottom-container {
@@ -129,9 +117,33 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-item .bottom-container .bottom {
-  @apply text-xs text-darkGray
+  @apply text-xs text-darkGray;
+}
+/* END OF PORTFOLIO ITEM */
+
+/* ------------------------------------------------------ */
+
+/* START OF FOOTER */
+.footer {
+  @apply text-2xl text-center;
 }
 
+.footer svg {
+  @apply w-8 mr-10 mt-10 mb-16;
+}
+
+.footer svg:last-of-type {
+  @apply mr-0;
+}
+
+.footer .icons {
+  @apply flex justify-center;
+}
+/* END OF FOOTER */
+
+/* ------------------------------------------------------ */
+
+/* START OF BANNER */
 .banner {
   @apply my-32 w-3/4 mx-auto;
 }
@@ -144,10 +156,11 @@ svg:hover .logo-black2 {
 .banner h1 {
   @apply text-3xl text-left mb-4 mt-4;
 }
+/* END OF BANNER */
 
-.social-icon {
-  font-size: 40px;
-}
+/* ------------------------------------------------------ */
+
+/* START OF COLORS */
 
 .lightRed {
   @apply bg-lightRed;
@@ -172,3 +185,141 @@ svg:hover .logo-black2 {
 .lightYellow {
   @apply bg-lightYellow;
 }
+/* END OF COLORS */
+
+/* ------------------------------------------------------ */
+
+/* START OF NAVBAR */
+header {
+  @apply pt-8 px-24;
+  overflow: hidden;
+}
+
+header a,
+header label {
+  display: block;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+header a:hover,
+header label:hover {
+  color: #aaa;
+}
+
+header label {
+  float: right;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+header label:after {
+  content: "\2261";
+  font-size: 3.5em;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+nav li {
+  display: block;
+  text-align: left;
+  padding-top: 40px;
+}
+
+nav a {
+  width: 100%;
+}
+
+#nav {
+  display: none;
+}
+
+#nav:checked ~ nav {
+  max-height: 200px; /* This can be anything bigger than your nav height. The transition duration works with this */
+}
+/* END OF NAVBAR */
+
+/* ------------------------------------------------------ */
+
+/* START OF MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .portfolio-container {
+    @apply grid-cols-2;
+  }
+
+  .navbar,
+  main,
+  header {
+    @apply px-12;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    @apply grid-cols-1;
+  }
+
+  .navbar,
+  main,
+  header {
+    @apply px-24;
+  }
+
+  main {
+    @apply px-24;
+  }
+
+  .banner {
+    @apply w-full;
+  }
+}
+
+@media (min-width: 575px) {
+  header label {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    max-height: none;
+  }
+
+  nav ul {
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  nav li {
+    display: inline-block;
+    text-align: left;
+    padding-top: 15px;
+  }
+
+  header nav a {
+    display: inline-block;
+    padding-left: 30px;
+    width: auto;
+  }
+}
+/* END OF MEDIA QUERIES */
+
+/* ------------------------------------------------------ */

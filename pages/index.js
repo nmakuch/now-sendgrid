@@ -18,7 +18,7 @@ export default () => {
             benefits and refunds they’re entitled to by making it easier to
             file their taxes."
             image="/img/claim-tax-benefits2.png"
-            background="teal"
+            background="lightRed"
             title="Claim Tax Benefits"
             bottom="Interaction design"
           />
@@ -29,7 +29,7 @@ export default () => {
             image="/img/ircc-rescheduler2.png"
             title="IRCC Rescheduler"
             bottom="Interaction design"
-            background="blue"
+            background="lightRed"
           />
           <PortfolioItem
             date="2019"
@@ -38,7 +38,7 @@ export default () => {
             image="/img/rosies-ms2.png"
             title="Rosie & Company (Maid)"
             bottom="Web development"
-            background="lightPurple"
+            background="lightRed"
           />
           <PortfolioItem
             date="2019"
@@ -47,7 +47,7 @@ export default () => {
             image="/img/rosie-and-company2.png"
             title="Rosie & Company (Dog)"
             bottom="Web development"
-            background="lightYellow"
+            background="lightRed"
           />
 
           <PortfolioItem
@@ -57,7 +57,7 @@ export default () => {
             image="/img/leading-sport-nation2.png"
             title="A Leading Sport Nation"
             bottom="Video production"
-            background="pink"
+            background="lightRed"
           />
 
           <PortfolioItem
