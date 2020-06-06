@@ -11,6 +11,8 @@ export default () => {
 
   const [inputs, setInputs] = useState({
     email: "",
+    firstName: "",
+    lastName: "",
     message: "",
   });
 
@@ -24,6 +26,8 @@ export default () => {
       setInputs({
         email: "",
         message: "",
+        firstName: "",
+        lastName:"",
       });
     } else {
       setStatus({
@@ -66,8 +70,28 @@ export default () => {
           bannerSubheader="Do you have any questions?"
           bannerHeader="If you'd like to connect, you can send an email to makuch.nick@gmail.com or use the form below"
         />
-        <div className="contact-container w-3/4 mx-auto">
-          <form onSubmit={handleOnSubmit}>
+        <div className="contact-container bg-contactForm p-24 w-3/4 mb-24 mx-auto">
+          <form className="w-3/4 mx-auto" onSubmit={handleOnSubmit}>
+            <div>
+            <input
+                id="firstName"
+                type="firstName"
+                onChange={handleOnChange}
+                placeholder=" First name:"
+                required
+                value={inputs.firstName}
+              />
+            </div>
+            <div>
+            <input
+                id="lastName"
+                type="lastName"
+                onChange={handleOnChange}
+                placeholder=" Last name:"
+                required
+                value={inputs.lastName}
+              />
+            </div>
             <div>
               <input
                 id="email"

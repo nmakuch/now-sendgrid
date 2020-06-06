@@ -20,7 +20,7 @@ main {
 
 input,
 textarea {
-  @apply border-2 w-full mb-6;
+  @apply border-2 border-lightGray w-full mb-6;
 }
 
 input {
@@ -195,6 +195,16 @@ svg:hover .logo-black2 {
   @apply bg-lightYellow;
 }
 /* END OF COLORS */
+
+/* ------------------------------------------------------ */
+
+/* START OF CONTACT */
+
+.contact-container {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* END OF CONTACT */
 
 /* ------------------------------------------------------ */
 

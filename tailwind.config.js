@@ -24,6 +24,7 @@ module.exports = {
       blue: "#2980B9",
       darkGray: "#686868",
       lightGray: "#a5a5a5",
+      contactForm: "#e5e5e5",
     },
     screens: {
       xxs: "280px",
