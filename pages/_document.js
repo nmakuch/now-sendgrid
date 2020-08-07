@@ -7,23 +7,19 @@ class CustomDocument extends Document {
       <html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Raleway"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Inter"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
             rel="stylesheet"
           />
           <style
             dangerouslySetInnerHTML={{
               __html: `
           body {
-            font-family: "Roboto";
+            font-family: 'Roboto', sans-serif;
           }
 
           h1,h2,h3,label {
             font-family: "Roboto";
-            font-weight: 500 !important;
+            font-weight: 900 !important;
             line-height: 38px;
           }
 
