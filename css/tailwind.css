@@ -76,6 +76,54 @@ svg:hover .logo-black2 {
 
 /* START OF PORTFOLIO ITEM */
 
+.portfolio-item-left {
+  @apply flex justify-center items-center px-24 py-12;
+}
+
+.portfolio-item-left .portfolio-item-text {
+  @apply w-2/5;
+}
+
+.portfolio-item-left .portfolio-item-text h2 {
+  @apply text-3xl mb-8;
+}
+
+.portfolio-item-left .portfolio-item-text p {
+  @apply mb-12 leading-7;
+}
+
+.portfolio-item-left .portfolio-item-text a {
+  @apply bg-black py-4 px-8 text-white;
+}
+
+.portfolio-item-left img {
+  @apply w-2/5;
+}
+
+.portfolio-item-right {
+  @apply flex items-center justify-center px-24 py-20;
+}
+
+.portfolio-item-right .portfolio-item-text {
+  @apply w-2/5;
+}
+
+.portfolio-item-right .portfolio-item-text h2 {
+  @apply text-3xl mb-8;
+}
+
+.portfolio-item-right .portfolio-item-text p {
+  @apply mb-12 leading-7;
+}
+
+.portfolio-item-right .portfolio-item-text a {
+  @apply bg-black py-4 px-8 text-white;
+}
+
+.portfolio-item-right img {
+  @apply w-2/5 mr-24;
+}
+
 /* ------------------------------------------------------ */
 
 /* START OF FOOTER */
@@ -124,6 +172,19 @@ svg:hover .logo-black2 {
 .banner h1 span {
   color: #c73838;
 }
+
+.banner .button {
+  @apply mt-16 mb-40;
+}
+
+.banner a {
+  @apply bg-black py-4 px-8 text-white;
+}
+
+.banner .status {
+  @apply text-left text-sm;
+}
+
 /* END OF BANNER */
 
 /* ------------------------------------------------------ */
