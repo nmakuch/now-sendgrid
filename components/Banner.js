@@ -1,13 +1,13 @@
 export default ({ bannerSubheader, bannerHeader, button }) => {
   return (
     <div className="banner">
-      <div className="status text-left text-sm">
+      <div className="status">
         <span className="employment-status">{bannerSubheader}</span>
       </div>
       <h1>{bannerHeader}</h1>
-      <div className="mt-12 mb-40">
+      <div className="button">
         {button === true ? (
-          <a className="bg-black py-4 px-8 text-white" href="/about">
+          <a href="/about">
             Learn more about me
           </a>
         ) : (
