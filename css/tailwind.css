@@ -81,7 +81,7 @@ svg:hover .logo-black2 {
 }
 
 .portfolio-item-left .portfolio-item-text {
-  @apply w-2/5;
+  @apply w-2/5 mr-12;
 }
 
 .portfolio-item-left .portfolio-item-text h2 {
@@ -132,7 +132,7 @@ svg:hover .logo-black2 {
 }
 
 .footer svg {
-  @apply w-8 mr-10 mt-10 mb-16;
+  @apply w-8 mr-10 mt-12 mb-16;
 }
 
 .footer svg:last-of-type {
@@ -216,8 +216,8 @@ svg:hover .logo-black2 {
   @apply bg-lightYellow;
 }
 
-.green {
-  @apply bg-green;
+.lightGreen {
+  @apply bg-lightGreen;
 }
 /* END OF COLORS */
 
@@ -313,6 +313,9 @@ nav a {
 /* START OF MEDIA QUERIES */
 
 @media (max-width: 1024px) {
+  .banner {
+    @apply ;
+  }
   .navbar,
   main,
   header {

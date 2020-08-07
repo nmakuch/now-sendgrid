@@ -16,10 +16,10 @@ module.exports = {
     },
     colors: {
       black: "#000000",
-      lightPurple: "#b099f4",
+      lightPurple: "#FBF2FF",
       teal: "#aedecd",
-      green: "#EEFEF4",
-      lightRed: "#FFF2F2",
+      lightGreen: "#F1FFF3",
+      lightRed: "#FFEDED",
       white: "#ffffff",
       lightYellow: "#ffe7bd",
       pink: "#fab67e",

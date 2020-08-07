@@ -21,6 +21,7 @@ export default () => {
             link="#"
             textSide="left"
             color="blue"
+            device="phone"
           />
           <PortfolioItem
             title="Helping canadians file their taxes to access benefits"
@@ -29,6 +30,35 @@ export default () => {
             making it easier to file their taxes."
             image="/img/claim-tax-benefits.png"
             link="#"
+            color="lightPurple"
+          />
+          <PortfolioItem
+            title="A Leading Sport Nation promotional advertisement"
+            textSide="left"
+            description="A short tv commercial I worked on. I generally was a Production Assistant but also did some minor video editing as well. The ad aired during the World Juniors."
+            image="/img/leading-sport-nation.png"
+            color="lightRed"
+          />
+          <PortfolioItem
+            title="Rosie and Company: Maid Service website"
+            description="This website was made for a Toronto based maid cleaning service. The site is made with Next.js and hooked into the Sendgrid API to book appointments by email."
+            image="/img/rosies-ms.png"
+            link="#"
+            color="blue"
+          />
+
+          <PortfolioItem
+            title="Rosie and Company Dog Walking website"
+            textSide="left"
+            description="This website was made for a Toronto based dog walking service. The site was made using Hugo, a static website generator. It displays general info and has a contact form."
+            image="/img/rosie-and-company.png"
+            color="lightPurple"
+          />
+          <PortfolioItem
+            title="Roberto and Rob 3D Animation"
+            textSide="right"
+            description="A short 3D animation made for a final university project in fourth year. Over a semester I modeled, motion captured and rendered all of the scenes in this video."
+            image="/img/roberto-and-rob.png"
             color="lightRed"
           />
         </div>
