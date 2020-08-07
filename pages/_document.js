@@ -7,7 +7,7 @@ class CustomDocument extends Document {
       <html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
             rel="stylesheet"
           />
           <style
@@ -19,7 +19,7 @@ class CustomDocument extends Document {
 
           h1,h2,h3,label {
             font-family: "Roboto";
-            font-weight: 900 !important;
+            font-weight: 700 !important;
             line-height: 38px;
           }
 
