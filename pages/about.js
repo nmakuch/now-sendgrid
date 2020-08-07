@@ -8,6 +8,7 @@ export default () => {
         <Banner
           bannerSubheader="Additional background information"
           bannerHeader="Learn more about my education background, as well as some of the places I've worked"
+          banner={false}
         />
       </main>
     </Layout>

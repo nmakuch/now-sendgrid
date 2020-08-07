@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/Layout";
-import Banner from "../components/Banner";
+import ContactBanner from "../components/ContactBanner";
 
 export default () => {
   const [status, setStatus] = useState({
@@ -27,7 +27,7 @@ export default () => {
         email: "",
         message: "",
         firstName: "",
-        lastName:"",
+        lastName: "",
       });
     } else {
       setStatus({
@@ -66,46 +66,48 @@ export default () => {
   return (
     <Layout>
       <main>
-        <Banner
+        <ContactBanner
           bannerSubheader="Do you have any questions?"
-          bannerHeader={`If you'd like to connect, you can send an email to makuch.nick@gmail.com or use the form below.`}
+          bannerHeaderFirst="If you'd like to connect, you can send an email to "
+          email="makuch.nick@gmail.com"
+          bannerHeaderLast=" or use the form below."
         />
         <div className="contact-container">
           <form onSubmit={handleOnSubmit}>
             <div>
-            <input
+              <label for="firstName">First name:</label>
+              <input
                 id="firstName"
                 type="firstName"
                 onChange={handleOnChange}
-                placeholder=" First name:"
                 required
                 value={inputs.firstName}
               />
             </div>
             <div>
-            <input
+              <label for="lastName">Last name:</label>
+              <input
                 id="lastName"
                 type="lastName"
                 onChange={handleOnChange}
-                placeholder=" Last name:"
                 required
                 value={inputs.lastName}
               />
             </div>
             <div>
+              <label for="email">Email address:</label>
               <input
                 id="email"
                 type="email"
                 onChange={handleOnChange}
-                placeholder=" Email address:"
                 required
                 value={inputs.email}
               />
             </div>
             <div>
+              <label for="firstName">Message:</label>
               <textarea
                 id="message"
-                placeholder=" Message:"
                 onChange={handleOnChange}
                 required
                 value={inputs.message}

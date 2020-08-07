@@ -11,7 +11,7 @@ h1 {
 }
 
 main {
-  @apply w-full px-24;
+  @apply w-full;
 }
 
 /* ------------------------------------------------------ */
@@ -20,24 +20,25 @@ main {
 
 input,
 textarea {
-  @apply border-2 border-lightGray w-full mb-6;
-}
-
-input {
-  height: 50px;
+  @apply border-2 border-lightGray w-full mb-6 py-2 px-1;
 }
 
 textarea {
-  height: 150px;
+  @apply h-40;
 }
-
 button {
   @apply w-full text-white py-4;
-  background-color: #5d5d5d;
+  background-color: black;
+  transition: background-color 0.7s ease;
+}
+
+button:hover {
+  background-color: #424242;
+  transition: background-color 0.7s ease;
 }
 
 label {
-  @apply block text-lg font-bold mb-3;
+  @apply block text-base font-bold mb-3;
 }
 /* END OF FORMS */
 
@@ -74,52 +75,6 @@ svg:hover .logo-black2 {
 /* ------------------------------------------------------ */
 
 /* START OF PORTFOLIO ITEM */
-.portfolio-container {
-  @apply mt-8 grid grid-cols-3 gap-5 mb-32;
-}
-
-.portfolio-item img {
-  @apply w-full mx-auto;
-}
-
-.portfolio-item {
-  @apply w-full mb-2;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item .category {
-  @apply text-darkGray flex justify-between px-6 pt-8 mb-8;
-}
-
-.portfolio-item .category .left,
-.portfolio-item .category .right {
-  @apply text-xs;
-}
-
-.portfolio-item .category span {
-  font-family: "Inter-SemiBold";
-}
-
-.portfolio-item img {
-  @apply py-2;
-}
-
-.portfolio-item .portfolio-header {
-  @apply px-6 text-2xl mb-4;
-}
-
-.portfolio-item .portfolio-description {
-  @apply px-6 text-sm mb-8;
-}
-
-.portfolio-item .bottom-container {
-  @apply px-6 pb-8;
-}
-
-.portfolio-item .bottom-container .bottom {
-  @apply text-xs text-darkGray;
-}
-/* END OF PORTFOLIO ITEM */
 
 /* ------------------------------------------------------ */
 
@@ -140,7 +95,7 @@ svg:hover .logo-black2 {
   transition: fill 0.7s ease;
 }
 
-.footer svg:hover path{
+.footer svg:hover path {
   fill: #da4343;
   transition: fill 0.7s ease;
 }
@@ -154,16 +109,20 @@ svg:hover .logo-black2 {
 
 /* START OF BANNER */
 .banner {
-  @apply my-32 w-3/4 mx-auto;
+  @apply mt-32 w-3/4 pl-48;
 }
 
 .banner .employment-status {
-  font-family: "Inter-SemiBold";
+  font-family: "Roboto";
   color: #a5a5a5;
 }
 
 .banner h1 {
   @apply text-3xl text-left mb-4 mt-4;
+}
+
+.banner h1 span {
+  color: #c73838;
 }
 /* END OF BANNER */
 
@@ -173,6 +132,7 @@ svg:hover .logo-black2 {
 
 .lightRed {
   @apply bg-lightRed;
+  transition: background-color 0.7s ease;
 }
 
 .teal {
@@ -194,6 +154,10 @@ svg:hover .logo-black2 {
 .lightYellow {
   @apply bg-lightYellow;
 }
+
+.green {
+  @apply bg-green;
+}
 /* END OF COLORS */
 
 /* ------------------------------------------------------ */
@@ -201,7 +165,7 @@ svg:hover .logo-black2 {
 /* START OF CONTACT */
 
 .contact-container {
-  @apply bg-contactForm p-24 w-3/4 mb-24 mx-auto;
+  @apply bg-contactForm p-12 w-3/4 mb-24 mx-auto;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -288,10 +252,6 @@ nav a {
 /* START OF MEDIA QUERIES */
 
 @media (max-width: 1024px) {
-  .portfolio-container {
-    @apply grid-cols-2;
-  }
-
   .navbar,
   main,
   header {
@@ -300,10 +260,6 @@ nav a {
 }
 
 @media (max-width: 768px) {
-  .portfolio-container {
-    @apply grid-cols-1;
-  }
-
   .navbar,
   main,
   header {
