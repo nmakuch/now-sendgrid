@@ -41,7 +41,7 @@ export default () => {
             description="A short tv commercial I worked on. I generally was a Production Assistant but also did some minor video editing as well. The ad aired during the World Juniors."
             image="/img/leading-sport-nation.png"
             link="#"
-            color="lightRed"
+            color="lightYellow"
             category="Video editing | Production Assistant"
           />
           <PortfolioItem
@@ -68,7 +68,7 @@ export default () => {
             description="This website was made for a Toronto based maid cleaning service. The site is made with Next.js and hooked into the Sendgrid API to book appointments by email."
             image="/img/rosies-ms.png"
             link="#"
-            color="lightRed"
+            color="lightYellow"
             category="Front-end development | Web design"
           />
           <PortfolioItem

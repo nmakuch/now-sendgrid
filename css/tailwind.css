@@ -317,7 +317,6 @@ nav a {
     @apply ;
   }
   .navbar,
-  main,
   header {
     @apply px-12;
   }
@@ -325,12 +324,7 @@ nav a {
 
 @media (max-width: 768px) {
   .navbar,
-  main,
   header {
-    @apply px-24;
-  }
-
-  main {
     @apply px-24;
   }
 
