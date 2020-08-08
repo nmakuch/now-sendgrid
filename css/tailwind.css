@@ -156,9 +156,6 @@ svg:hover .logo-black2 {
 /* ------------------------------------------------------ */
 
 /* START OF BANNER */
-.banner {
-  @apply mt-32 w-3/4 pl-48;
-}
 
 .banner .employment-status {
   font-family: "Roboto";
@@ -312,13 +309,23 @@ nav a {
 
 /* START OF MEDIA QUERIES */
 
-@media (max-width: 1024px) {
-  .banner {
-    @apply ;
-  }
+@media (max-width: 1096px) {
   .navbar,
   header {
     @apply px-12;
+  }
+
+  .portfolio-item-left,
+  .portfolio-item-right {
+    @apply justify-between;
+  }
+
+  .portfolio-item-left .portfolio-item-text {
+    @apply w-3/5;
+  }
+
+  .portfolio-item-right .portfolio-item-text {
+    @apply w-3/5;
   }
 }
 

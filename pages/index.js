@@ -20,19 +20,19 @@ export default () => {
             simpler, easier and faster user experience."
             image="/img/ircc-rescheduler.png"
             link="#"
-            color="blue"
+            color="lightGreen"
             device="phone"
             category="Interaction design | Front-end development"
           />
           <PortfolioItem
-            title="Helping canadians file their taxes to access benefits"
+            title="Helping canadians with low income file their taxes"
             textSide="right"
             description="Exploring an online service to help Canadians living in low income
             situations receive the benefits and refunds they’re entitled to by
             making it easier to file their taxes."
             image="/img/claim-tax-benefits.png"
             link="#"
-            color="lightPurple"
+            color="blue"
             category="Interaction design | Front-end development"
           />
           <PortfolioItem
@@ -41,7 +41,7 @@ export default () => {
             description="A short tv commercial I worked on. I generally was a Production Assistant but also did some minor video editing as well. The ad aired during the World Juniors."
             image="/img/leading-sport-nation.png"
             link="#"
-            color="lightYellow"
+            color="lightPurple"
             category="Video editing | Production Assistant"
           />
           <PortfolioItem
@@ -50,7 +50,7 @@ export default () => {
             description="This was an interface I designed and developped for an automated compliance monitoring tool. It was made using Emotion.js and React and is integrated with an API developped by another developper I was working with."
             image="/img/security-goals.png"
             link="#"
-            color="blue"
+            color="lightYellow"
             category="Interaction design | Front-end development"
           />
           <PortfolioItem
@@ -59,7 +59,7 @@ export default () => {
             description="This website was made for a Toronto based dog walking service. The site was made using Hugo, a static website generator. It displays general info and has a contact form."
             image="/img/rosie-and-company.png"
             linke="#"
-            color="lightPurple"
+            color="lightGreen"
             category="Front-end development | Web design"
           />
           <PortfolioItem
@@ -68,7 +68,7 @@ export default () => {
             description="This website was made for a Toronto based maid cleaning service. The site is made with Next.js and hooked into the Sendgrid API to book appointments by email."
             image="/img/rosies-ms.png"
             link="#"
-            color="lightYellow"
+            color="blue"
             category="Front-end development | Web design"
           />
           <PortfolioItem
@@ -77,7 +77,7 @@ export default () => {
             description="A short 3D animation made for a final university project in fourth year. Over a semester I modeled, motion captured and rendered all of the scenes in this video."
             image="/img/roberto-and-rob.png"
             link="#"
-            color="blue"
+            color="lightPurple"
             category="3D modelling | 3d animation"
           />
         </div>
