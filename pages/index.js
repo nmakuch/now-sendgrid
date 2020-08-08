@@ -47,7 +47,7 @@ export default () => {
           <PortfolioItem
             title="Security Goals UI"
             textSide="right"
-            description="This was an interface I designed and developped for an automated compliance monitoring tool. It was made using Emotion.js and React and is integrated with an API developped by another developper I was working with."
+            description="This was an interface I designed and integrated with an API created to run automated compliance checks on kubernetes based applications."
             image="/img/security-goals.png"
             link="#"
             color="lightYellow"
